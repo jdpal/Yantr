@@ -1,0 +1,39 @@
+name: BaselineBar
+options:
+  bundleIdPrefix: com.projectbaseline
+  deploymentTarget:
+    macOS: "13.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+    CODE_SIGN_STYLE: Automatic
+    GENERATE_INFOPLIST_FILE: YES
+    INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+    INFOPLIST_KEY_NSPrincipalClass: NSApplication
+    PRODUCT_BUNDLE_IDENTIFIER: com.projectbaseline.BaselineBar
+    ENABLE_HARDENED_RUNTIME: YES
+    SUPPORTS_MACCATALYST: NO
+
+targets:
+  BaselineBar:
+    type: application
+    platform: macOS
+    sources:
+      - path: BaselineBar
+    settings:
+      base:
+        PRODUCT_NAME: BaselineBar
+    entitlements:
+      path: BaselineBar/BaselineBar.entitlements
+    scheme:
+      testTargets:
+        - BaselineBarTests
+
+  BaselineBarTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: Tests
+    dependencies:
+      - target: BaselineBar
