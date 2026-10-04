@@ -4,12 +4,12 @@ struct MenuBarLayoutView: View {
     @EnvironmentObject private var model: AppModel
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
+        VStack(alignment: .leading, spacing: 14) {
             header
             menuBarPreview
             layoutColumns
         }
-        .padding(28)
+        .padding(16)
         .task { await model.refreshMenuBarItems() }
     }
 
@@ -18,7 +18,7 @@ struct MenuBarLayoutView: View {
             VStack(alignment: .leading, spacing: 5) {
                 Text("Menu Bar")
                     .font(.largeTitle.bold())
-                Text("Arrange what stays visible and what BaselineBar should keep out of the way.")
+                Text("Arrange what stays visible and what Yantr should keep out of the way.")
                     .foregroundStyle(.secondary)
             }
             Spacer()

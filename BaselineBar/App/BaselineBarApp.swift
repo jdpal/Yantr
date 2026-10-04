@@ -1,17 +1,17 @@
 import SwiftUI
 
 @main
-struct BaselineBarApp: App {
+struct YantrApp: App {
     @StateObject private var appModel = AppModel()
 
     var body: some Scene {
-        MenuBarExtra("BaselineBar", systemImage: "menubar.rectangle") {
+        MenuBarExtra("Yantr", systemImage: "menubar.rectangle") {
             MenuBarPopoverView()
                 .environmentObject(appModel)
         }
         .menuBarExtraStyle(.window)
 
-        Window("BaselineBar", id: "main") {
+        Window("Yantr", id: "main") {
             MainWindowView()
                 .environmentObject(appModel)
                 .frame(minWidth: 760, minHeight: 520)

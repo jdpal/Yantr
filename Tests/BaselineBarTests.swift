@@ -1,5 +1,5 @@
 import XCTest
-@testable import BaselineBar
+@testable import YantrCore
 
 final class BaselineBarTests: XCTestCase {
     func testCGRectCodableRoundTrip() throws {

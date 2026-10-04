@@ -1,5 +1,5 @@
 import AppKit
-import ApplicationServices
+@preconcurrency import ApplicationServices
 
 final class AccessibilityPermissionService {
     enum State: Equatable {

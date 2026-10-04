@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00684B5444F2096A9241B0A9 /* AutomationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD8DB54A2B08C21AFED79FF /* AutomationRule.swift */; };
+		1603493455EFAF8D88A9064F /* BaselineBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A299CE6FBC629958049E89B /* BaselineBarTests.swift */; };
+		23D93B01E4B3A7F7E1C86D6D /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57FA129146EB0E0BDEC658 /* WindowController.swift */; };
+		30E99E783615AD7E3EC39643 /* LayoutPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9239785946075D3F17B25B /* LayoutPreset.swift */; };
+		37E031A4E053EDF823051330 /* MenuBarLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB13EF53822F998471604B /* MenuBarLayoutView.swift */; };
+		389ADC89B7904103F1456692 /* AccessibilityPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346C5C558497671A2EBB318C /* AccessibilityPermissionService.swift */; };
+		3CCDD6B393A82F7262D39CDD /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57FA129146EB0E0BDEC658 /* WindowController.swift */; };
+		3CEC7B06F1DE71FF5385B962 /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192D101654F53CA0D2DF610 /* MainWindowView.swift */; };
+		3CF2BED6785F28D32F8CF0FE /* MenuBarGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913593DBAE08266839A4437D /* MenuBarGroupView.swift */; };
+		418CDCF7EE4F2446CDC2486F /* MenuBarScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B51A239C5F04EC2F6B16FD2 /* MenuBarScanner.swift */; };
+		4C2E6943246DCF292AFC8DCA /* MenuBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3445F5D458F847B20608BB59 /* MenuBarItem.swift */; };
+		5143955E8CBBD4898EFCF777 /* LayoutPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9239785946075D3F17B25B /* LayoutPreset.swift */; };
+		5E08A845FCAB9C408F8C7CAD /* MenuBarLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E0CE2BF48D5847BF1631EF /* MenuBarLayoutController.swift */; };
+		69D6A5AAF72E30F318B42686 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A787DCCB161F16CDFD10E5 /* AppModel.swift */; };
+		69D96A28E86328990B220250 /* AutomationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD8DB54A2B08C21AFED79FF /* AutomationRule.swift */; };
+		6E9D4115F4377781D5B8B534 /* YantrCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EA24A46195E528AFC386DF /* YantrCore.framework */; };
+		7E93F6FDDB8104ADD9FD0D89 /* AccessibilityPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346C5C558497671A2EBB318C /* AccessibilityPermissionService.swift */; };
+		86A339D312FC448713DC3141 /* LoginItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F564B8889C56A2DB71B7E9 /* LoginItemService.swift */; };
+		89EC5A53A07B0AC361ACEA10 /* BaselineBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E52E0F32B804A0AF42F98B0 /* BaselineBarApp.swift */; };
+		8CF62B01578AA054DD071EDB /* YantrCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44EA24A46195E528AFC386DF /* YantrCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8D9E9598E96BF26B89A56C39 /* YantrCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EA24A46195E528AFC386DF /* YantrCore.framework */; };
+		AFE96B76C55162AD3560B8A6 /* MenuBarPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31111AFCDB8E1893DCE224C /* MenuBarPopoverView.swift */; };
+		B14CE1F1C84764CAAE7F3F8C /* MenuBarLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E0CE2BF48D5847BF1631EF /* MenuBarLayoutController.swift */; };
+		B515A40103D0A530272DB394 /* YantrCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44EA24A46195E528AFC386DF /* YantrCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C41998B376206234C35A1909 /* LoginItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F564B8889C56A2DB71B7E9 /* LoginItemService.swift */; };
+		C7F67C0BFB52CC96AA36AE20 /* MenuBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3445F5D458F847B20608BB59 /* MenuBarItem.swift */; };
+		C88A1920BD812A7F3DA4994E /* MenuBarScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B51A239C5F04EC2F6B16FD2 /* MenuBarScanner.swift */; };
+		CB9ECC5B826CF7689EFEA1B0 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A787DCCB161F16CDFD10E5 /* AppModel.swift */; };
+		D3D49F28B997596EAC1B4DAB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7283A0E0C67FEB59B869C73 /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		045D441F7241938DEC2F0EF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34CA530DF886DAACAD583014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 836DC9B540465CEA00701C34;
+			remoteInfo = YantrCore;
+		};
+		89A65E382B559F1D7946A7CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34CA530DF886DAACAD583014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 836DC9B540465CEA00701C34;
+			remoteInfo = YantrCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		138DC063F917080BAABEC17E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8CF62B01578AA054DD071EDB /* YantrCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DFA188B13E0153D349C98B8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B515A40103D0A530272DB394 /* YantrCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		10F564B8889C56A2DB71B7E9 /* LoginItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemService.swift; sourceTree = "<group>"; };
+		1A299CE6FBC629958049E89B /* BaselineBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaselineBarTests.swift; sourceTree = "<group>"; };
+		22EB13EF53822F998471604B /* MenuBarLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarLayoutView.swift; sourceTree = "<group>"; };
+		3445F5D458F847B20608BB59 /* MenuBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarItem.swift; sourceTree = "<group>"; };
+		346C5C558497671A2EBB318C /* AccessibilityPermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityPermissionService.swift; sourceTree = "<group>"; };
+		3B51A239C5F04EC2F6B16FD2 /* MenuBarScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarScanner.swift; sourceTree = "<group>"; };
+		44EA24A46195E528AFC386DF /* YantrCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YantrCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A9239785946075D3F17B25B /* LayoutPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutPreset.swift; sourceTree = "<group>"; };
+		6D57FA129146EB0E0BDEC658 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		7192D101654F53CA0D2DF610 /* MainWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowView.swift; sourceTree = "<group>"; };
+		913593DBAE08266839A4437D /* MenuBarGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarGroupView.swift; sourceTree = "<group>"; };
+		917C9B1BB1697786FFC996DE /* YantrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YantrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E52E0F32B804A0AF42F98B0 /* BaselineBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaselineBarApp.swift; sourceTree = "<group>"; };
+		9EB7226BE07BE25662C1D5AF /* Yantr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yantr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31111AFCDB8E1893DCE224C /* MenuBarPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPopoverView.swift; sourceTree = "<group>"; };
+		B7283A0E0C67FEB59B869C73 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B7E0CE2BF48D5847BF1631EF /* MenuBarLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarLayoutController.swift; sourceTree = "<group>"; };
+		D91D46DC365FACFD04BDABE9 /* BaselineBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BaselineBar.entitlements; sourceTree = "<group>"; };
+		E3A787DCCB161F16CDFD10E5 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		FAD8DB54A2B08C21AFED79FF /* AutomationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationRule.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E791AF9AB3DF711698789FCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D9E9598E96BF26B89A56C39 /* YantrCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE51CA4513749B96C575812E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E9D4115F4377781D5B8B534 /* YantrCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		366E4C43D2162B55F0D36EFE = {
+			isa = PBXGroup;
+			children = (
+				4B65A76105031B73AB6F09FF /* App */,
+				B16D55EE7144AA89F70DE1F3 /* BaselineBar */,
+				EDF53EE00E67B00F730CD1AA /* Models */,
+				E2CBD3F134A1594B7DB69086 /* Services */,
+				5F8B8A93FBC5F869F7212EA5 /* Tests */,
+				45BC47EFF9285E826AABFCD8 /* Utilities */,
+				F4D27DEB6668C381C604135D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		385BD26888488DC46F0B3D61 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7192D101654F53CA0D2DF610 /* MainWindowView.swift */,
+				913593DBAE08266839A4437D /* MenuBarGroupView.swift */,
+				22EB13EF53822F998471604B /* MenuBarLayoutView.swift */,
+				A31111AFCDB8E1893DCE224C /* MenuBarPopoverView.swift */,
+				B7283A0E0C67FEB59B869C73 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		45BC47EFF9285E826AABFCD8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
+			path = BaselineBar/Utilities;
+			sourceTree = "<group>";
+		};
+		4B65A76105031B73AB6F09FF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E3A787DCCB161F16CDFD10E5 /* AppModel.swift */,
+				9E52E0F32B804A0AF42F98B0 /* BaselineBarApp.swift */,
+			);
+			name = App;
+			path = BaselineBar/App;
+			sourceTree = "<group>";
+		};
+		5F8B8A93FBC5F869F7212EA5 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1A299CE6FBC629958049E89B /* BaselineBarTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		B16D55EE7144AA89F70DE1F3 /* BaselineBar */ = {
+			isa = PBXGroup;
+			children = (
+				D91D46DC365FACFD04BDABE9 /* BaselineBar.entitlements */,
+				4B65A76105031B73AB6F09FF /* App */,
+				EDF53EE00E67B00F730CD1AA /* Models */,
+				E2CBD3F134A1594B7DB69086 /* Services */,
+				385BD26888488DC46F0B3D61 /* Views */,
+			);
+			path = BaselineBar;
+			sourceTree = "<group>";
+		};
+		E2CBD3F134A1594B7DB69086 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				346C5C558497671A2EBB318C /* AccessibilityPermissionService.swift */,
+				10F564B8889C56A2DB71B7E9 /* LoginItemService.swift */,
+				B7E0CE2BF48D5847BF1631EF /* MenuBarLayoutController.swift */,
+				3B51A239C5F04EC2F6B16FD2 /* MenuBarScanner.swift */,
+				6D57FA129146EB0E0BDEC658 /* WindowController.swift */,
+			);
+			name = Services;
+			path = BaselineBar/Services;
+			sourceTree = "<group>";
+		};
+		EDF53EE00E67B00F730CD1AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAD8DB54A2B08C21AFED79FF /* AutomationRule.swift */,
+				5A9239785946075D3F17B25B /* LayoutPreset.swift */,
+				3445F5D458F847B20608BB59 /* MenuBarItem.swift */,
+			);
+			name = Models;
+			path = BaselineBar/Models;
+			sourceTree = "<group>";
+		};
+		F4D27DEB6668C381C604135D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EB7226BE07BE25662C1D5AF /* Yantr.app */,
+				44EA24A46195E528AFC386DF /* YantrCore.framework */,
+				917C9B1BB1697786FFC996DE /* YantrTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21A80A520CA734C32F4B0187 /* YantrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAD2282A25F4AE232DADA712 /* Build configuration list for PBXNativeTarget "YantrTests" */;
+			buildPhases = (
+				BF00B79B0D88830EF25379DC /* Sources */,
+				E791AF9AB3DF711698789FCA /* Frameworks */,
+				7DFA188B13E0153D349C98B8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CFB72E9F30CE74F9BC4F2F7 /* PBXTargetDependency */,
+			);
+			name = YantrTests;
+			packageProductDependencies = (
+			);
+			productName = YantrTests;
+			productReference = 917C9B1BB1697786FFC996DE /* YantrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		836DC9B540465CEA00701C34 /* YantrCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDDE23B4F4AB6682805E7923 /* Build configuration list for PBXNativeTarget "YantrCore" */;
+			buildPhases = (
+				3B91FA667B2D3B3FABBB1D0B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YantrCore;
+			packageProductDependencies = (
+			);
+			productName = YantrCore;
+			productReference = 44EA24A46195E528AFC386DF /* YantrCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E7C92F91E0BB91746240F0B2 /* Yantr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BCAF757296E7D6BF221B610 /* Build configuration list for PBXNativeTarget "Yantr" */;
+			buildPhases = (
+				DBF35F7EDD0EFF603B679C0C /* Sources */,
+				FE51CA4513749B96C575812E /* Frameworks */,
+				138DC063F917080BAABEC17E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11F256010962082C356F2389 /* PBXTargetDependency */,
+			);
+			name = Yantr;
+			packageProductDependencies = (
+			);
+			productName = Yantr;
+			productReference = 9EB7226BE07BE25662C1D5AF /* Yantr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34CA530DF886DAACAD583014 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					21A80A520CA734C32F4B0187 = {
+						ProvisioningStyle = Automatic;
+					};
+					836DC9B540465CEA00701C34 = {
+						ProvisioningStyle = Automatic;
+					};
+					E7C92F91E0BB91746240F0B2 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6E165D9010D04F837B74EA83 /* Build configuration list for PBXProject "Yantr" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 366E4C43D2162B55F0D36EFE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F4D27DEB6668C381C604135D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				836DC9B540465CEA00701C34 /* YantrCore */,
+				E7C92F91E0BB91746240F0B2 /* Yantr */,
+				21A80A520CA734C32F4B0187 /* YantrTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B91FA667B2D3B3FABBB1D0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E93F6FDDB8104ADD9FD0D89 /* AccessibilityPermissionService.swift in Sources */,
+				CB9ECC5B826CF7689EFEA1B0 /* AppModel.swift in Sources */,
+				69D96A28E86328990B220250 /* AutomationRule.swift in Sources */,
+				5143955E8CBBD4898EFCF777 /* LayoutPreset.swift in Sources */,
+				86A339D312FC448713DC3141 /* LoginItemService.swift in Sources */,
+				C7F67C0BFB52CC96AA36AE20 /* MenuBarItem.swift in Sources */,
+				5E08A845FCAB9C408F8C7CAD /* MenuBarLayoutController.swift in Sources */,
+				418CDCF7EE4F2446CDC2486F /* MenuBarScanner.swift in Sources */,
+				23D93B01E4B3A7F7E1C86D6D /* WindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF00B79B0D88830EF25379DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1603493455EFAF8D88A9064F /* BaselineBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBF35F7EDD0EFF603B679C0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				389ADC89B7904103F1456692 /* AccessibilityPermissionService.swift in Sources */,
+				69D6A5AAF72E30F318B42686 /* AppModel.swift in Sources */,
+				00684B5444F2096A9241B0A9 /* AutomationRule.swift in Sources */,
+				89EC5A53A07B0AC361ACEA10 /* BaselineBarApp.swift in Sources */,
+				30E99E783615AD7E3EC39643 /* LayoutPreset.swift in Sources */,
+				C41998B376206234C35A1909 /* LoginItemService.swift in Sources */,
+				3CEC7B06F1DE71FF5385B962 /* MainWindowView.swift in Sources */,
+				3CF2BED6785F28D32F8CF0FE /* MenuBarGroupView.swift in Sources */,
+				4C2E6943246DCF292AFC8DCA /* MenuBarItem.swift in Sources */,
+				B14CE1F1C84764CAAE7F3F8C /* MenuBarLayoutController.swift in Sources */,
+				37E031A4E053EDF823051330 /* MenuBarLayoutView.swift in Sources */,
+				AFE96B76C55162AD3560B8A6 /* MenuBarPopoverView.swift in Sources */,
+				C88A1920BD812A7F3DA4994E /* MenuBarScanner.swift in Sources */,
+				D3D49F28B997596EAC1B4DAB /* SettingsView.swift in Sources */,
+				3CCDD6B393A82F7262D39CDD /* WindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11F256010962082C356F2389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 836DC9B540465CEA00701C34 /* YantrCore */;
+			targetProxy = 89A65E382B559F1D7946A7CD /* PBXContainerItemProxy */;
+		};
+		8CFB72E9F30CE74F9BC4F2F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 836DC9B540465CEA00701C34 /* YantrCore */;
+			targetProxy = 045D441F7241938DEC2F0EF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BA78C6D5BB9B66664134419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projectbaseline.YantrCore;
+				PRODUCT_NAME = YantrCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		0E8B1EDDDEDB48685E5AB133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projectbaseline.Yantr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		1925A70E6890BF25CF35B9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projectbaseline.YantrCore;
+				PRODUCT_NAME = YantrCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		4656C48C6711F7A5FE59A452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				TEST_HOST = "";
+			};
+			name = Release;
+		};
+		9C4B3C34DEC57A688D932AE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BaselineBar/BaselineBar.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = Yantr;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C38A8F7B618E41B53DD97291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				TEST_HOST = "";
+			};
+			name = Debug;
+		};
+		CDB3B256EF03852F4F080100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BaselineBar/BaselineBar.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = Yantr;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EA5BA0975A15F647E8C0134D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projectbaseline.Yantr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E165D9010D04F837B74EA83 /* Build configuration list for PBXProject "Yantr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5BA0975A15F647E8C0134D /* Debug */,
+				0E8B1EDDDEDB48685E5AB133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7BCAF757296E7D6BF221B610 /* Build configuration list for PBXNativeTarget "Yantr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDB3B256EF03852F4F080100 /* Debug */,
+				9C4B3C34DEC57A688D932AE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DDDE23B4F4AB6682805E7923 /* Build configuration list for PBXNativeTarget "YantrCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BA78C6D5BB9B66664134419 /* Debug */,
+				1925A70E6890BF25CF35B9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EAD2282A25F4AE232DADA712 /* Build configuration list for PBXNativeTarget "YantrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C38A8F7B618E41B53DD97291 /* Debug */,
+				4656C48C6711F7A5FE59A452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34CA530DF886DAACAD583014 /* Project object */;
+}

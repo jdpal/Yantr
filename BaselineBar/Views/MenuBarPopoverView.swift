@@ -6,10 +6,10 @@ struct MenuBarPopoverView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("BaselineBar")
+            Text("Yantr")
                 .font(.headline)
 
-            Button("Show BaselineBar") {
+            Button("Show Yantr") {
                 openWindow(id: "main")
                 NSApplication.shared.activate(ignoringOtherApps: true)
             }

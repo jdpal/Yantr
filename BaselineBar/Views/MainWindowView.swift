@@ -29,11 +29,11 @@ struct MainWindowView: View {
                     )
                 case .settings:
                     SettingsView()
-                        .padding(28)
+                        .padding(16)
                 }
             }
         }
-        .alert("BaselineBar", isPresented: Binding(
+        .alert("Yantr", isPresented: Binding(
             get: { model.lastErrorMessage != nil },
             set: { if !$0 { model.lastErrorMessage = nil } }
         )) {
@@ -59,6 +59,20 @@ private struct PlaceholderSectionView: View {
     let systemImage: String
 
     var body: some View {
-        ContentUnavailableView(title, systemImage: systemImage, description: Text(message))
+        VStack(spacing: 12) {
+            Image(systemName: systemImage)
+                .font(.system(size: 34))
+                .foregroundStyle(.secondary)
+            Text(title)
+                .font(.title2)
+                .fontWeight(.semibold)
+            Text(message)
+                .font(.body)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 36)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(nsColor: .windowBackgroundColor))
     }
 }

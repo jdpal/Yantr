@@ -24,7 +24,7 @@ struct SettingsView: View {
 
             Section("General") {
                 Toggle("Launch at login", isOn: $launchAtLogin)
-                    .onChange(of: launchAtLogin) { _, newValue in
+                    .onChange(of: launchAtLogin) { newValue in
                         do {
                             try model.loginItemService.setEnabled(newValue)
                         } catch {
@@ -35,6 +35,7 @@ struct SettingsView: View {
             }
         }
         .formStyle(.grouped)
+        .padding(.top, 4)
         .onAppear {
             launchAtLogin = model.loginItemService.isEnabled
             model.permissionState = model.permissions.currentState

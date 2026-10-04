@@ -1,9 +1,9 @@
-# BaselineBar — Codex Build Kit
+# Yantr — Codex Build Kit
 
 A native macOS menu-bar manager and lightweight automation app.
 
 ## Product goal
-BaselineBar combines two ideas in one deliberately simple app:
+Yantr combines two ideas in one deliberately simple app:
 
 1. **Menu-bar control** — discover menu-bar items, let the user choose what stays visible, define ordering, and save layouts.
 2. **Mac automation** — global shortcuts, window actions, app launching, and simple trigger → action rules inspired by Hammerspoon.
@@ -36,16 +36,16 @@ xcodegen generate
 open BaselineBar.xcodeproj
 ```
 
-If you do not want XcodeGen, create a new macOS App project in Xcode named `BaselineBar`, then copy the `BaselineBar/` folder into the project.
+If you do not want XcodeGen, create a new macOS App project in Xcode named `Yantr`, then copy the `BaselineBar/` folder into the project.
 
 ## First run
 1. Build and launch.
-2. Open BaselineBar from the menu bar.
+2. Open Yantr from the menu bar.
 3. Grant Accessibility only when prompted by a feature that requires it.
 4. Use the Layout screen to arrange discovered items into Visible, Auto, and Hidden groups.
 
 ## Important platform constraint
-Apple does not expose a general public API to arbitrarily reorder all third-party status items. BaselineBar therefore separates:
+Apple does not expose a general public API to arbitrarily reorder all third-party status items. Yantr therefore separates:
 
 - **Desired layout state** — always supported in our app.
 - **Observed menu-bar state** — discovered through public Accessibility APIs where possible.
@@ -54,4 +54,4 @@ Apple does not expose a general public API to arbitrarily reorder all third-part
 Never use undocumented/private API as a silent fallback. If an item cannot be moved reliably, surface that state in the UI.
 
 ## Working name
-`BaselineBar` is a placeholder. Rename the target, bundle ID, and product copy before shipping.
+This app is now named Yantr.

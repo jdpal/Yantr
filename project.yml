@@ -1,4 +1,4 @@
-name: BaselineBar
+name: Yantr
 options:
   bundleIdPrefix: com.projectbaseline
   deploymentTarget:
@@ -11,29 +11,49 @@ settings:
     GENERATE_INFOPLIST_FILE: YES
     INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
     INFOPLIST_KEY_NSPrincipalClass: NSApplication
-    PRODUCT_BUNDLE_IDENTIFIER: com.projectbaseline.BaselineBar
+    PRODUCT_BUNDLE_IDENTIFIER: com.projectbaseline.Yantr
     ENABLE_HARDENED_RUNTIME: YES
     SUPPORTS_MACCATALYST: NO
 
 targets:
-  BaselineBar:
+  YantrCore:
+    type: framework
+    platform: macOS
+    sources:
+      - path: BaselineBar/App/AppModel.swift
+      - path: BaselineBar/Models
+      - path: BaselineBar/Services
+      - path: BaselineBar/Utilities
+    settings:
+      base:
+        PRODUCT_NAME: YantrCore
+        PRODUCT_BUNDLE_IDENTIFIER: com.projectbaseline.YantrCore
+        SKIP_INSTALL: NO
+        MACH_O_TYPE: staticlib
+
+  Yantr:
     type: application
     platform: macOS
     sources:
       - path: BaselineBar
     settings:
       base:
-        PRODUCT_NAME: BaselineBar
+        PRODUCT_NAME: Yantr
+    dependencies:
+      - target: YantrCore
     entitlements:
       path: BaselineBar/BaselineBar.entitlements
     scheme:
       testTargets:
-        - BaselineBarTests
+        - YantrTests
 
-  BaselineBarTests:
+  YantrTests:
     type: bundle.unit-test
     platform: macOS
+    settings:
+      base:
+        TEST_HOST: ""
     sources:
       - path: Tests
     dependencies:
-      - target: BaselineBar
+      - target: YantrCore
