@@ -14,14 +14,12 @@ struct MenuBarScanner {
     }
 
     func scan() async throws -> [MenuBarItem] {
-        guard AXIsProcessTrusted() else {
-            return Self.previewItems
-        }
+        guard AXIsProcessTrusted() else { throw ScanError.accessibilityPermissionRequired }
 
         let runningApps = NSWorkspace.shared.runningApplications
         var discovered: [MenuBarItem] = []
 
-        for app in runningApps where app.activationPolicy != .prohibited {
+        for app in runningApps {
             let appElement = AXUIElementCreateApplication(app.processIdentifier)
             var menuBarValue: CFTypeRef?
             let result = AXUIElementCopyAttributeValue(
@@ -87,12 +85,4 @@ struct MenuBarScanner {
         return value as? String
     }
 
-    static let previewItems: [MenuBarItem] = [
-        MenuBarItem(title: "Wi-Fi", visibility: .visible, order: 0),
-        MenuBarItem(title: "Battery", visibility: .visible, order: 1),
-        MenuBarItem(title: "Sound", visibility: .visible, order: 2),
-        MenuBarItem(title: "VPN", visibility: .automatic, order: 3),
-        MenuBarItem(title: "Dropbox", visibility: .hidden, order: 4),
-        MenuBarItem(title: "OneDrive", visibility: .hidden, order: 5)
-    ]
 }
