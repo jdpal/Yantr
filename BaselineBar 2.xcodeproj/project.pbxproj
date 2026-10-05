@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		037E3319521A773848140876 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0814AC9C5886512A08EAFF /* SettingsView.swift */; };
+		0E7FA26A2C8AA465B95BCB5E /* LoginItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B999592D5674D07191DEB3B5 /* LoginItemService.swift */; };
+		1661E53CE60748139580EB2D /* BaselineBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9C6815D93457E782CC55E4 /* BaselineBarApp.swift */; };
+		3172FEE727FD574010CA79C3 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616966A58CBEF91DCBF2DDC1 /* AppModel.swift */; };
+		69E788636030C2338EA956BB /* MenuBarLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F853D84892F84014B07949C8 /* MenuBarLayoutController.swift */; };
+		7B2D182B08DCB1D50B2B80FE /* MenuBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F823F93FFAE2938DA5D8184 /* MenuBarItem.swift */; };
+		7B4F787691194A1DF21F33D3 /* AutomationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751029FFFF267A9625C06746 /* AutomationRule.swift */; };
+		9DA44ACACE273B2D19F39D68 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A8E39F897994D66517260D /* WindowController.swift */; };
+		AAAEFEC13E88243C57277920 /* BaselineBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D08C348D7585BD688A3728 /* BaselineBarTests.swift */; };
+		B92A608C55F1B7D303C20441 /* MenuBarGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C097291BFF5A82B98A92A3 /* MenuBarGroupView.swift */; };
+		BCF152553313678E6986E50E /* MenuBarScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526276664B40B389ACA09446 /* MenuBarScanner.swift */; };
+		CD03E9BD0007192500547016 /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96632EADB049DDF1FBEC20E9 /* MainWindowView.swift */; };
+		D1C5F44C5071930467E44452 /* AccessibilityPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A622479298A0A146A4583B6 /* AccessibilityPermissionService.swift */; };
+		DCE2993AB632C087B02DBC40 /* MenuBarLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE993494184B75B1F0855A5 /* MenuBarLayoutView.swift */; };
+		E9B08CC3857C7D7A56FF41D3 /* MenuBarPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60C3C233FF7418B98CCF46F /* MenuBarPopoverView.swift */; };
+		F7ECF13202564673F6A20B0A /* LayoutPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F25ADBD79B2193E3826E1D3 /* LayoutPreset.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		717B8E96C31E4185202F5A67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E85C4574158B451F5EF90091 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CC4B901E642D87DEFBCC58F;
+			remoteInfo = BaselineBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F823F93FFAE2938DA5D8184 /* MenuBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarItem.swift; sourceTree = "<group>"; };
+		1A622479298A0A146A4583B6 /* AccessibilityPermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityPermissionService.swift; sourceTree = "<group>"; };
+		3AD2E923BDE67918F2DAF794 /* BaselineBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaselineBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A8E39F897994D66517260D /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		526276664B40B389ACA09446 /* MenuBarScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarScanner.swift; sourceTree = "<group>"; };
+		616966A58CBEF91DCBF2DDC1 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		6F25ADBD79B2193E3826E1D3 /* LayoutPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutPreset.swift; sourceTree = "<group>"; };
+		73D08C348D7585BD688A3728 /* BaselineBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaselineBarTests.swift; sourceTree = "<group>"; };
+		751029FFFF267A9625C06746 /* AutomationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationRule.swift; sourceTree = "<group>"; };
+		96632EADB049DDF1FBEC20E9 /* MainWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowView.swift; sourceTree = "<group>"; };
+		99C097291BFF5A82B98A92A3 /* MenuBarGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarGroupView.swift; sourceTree = "<group>"; };
+		A53A4A3DCE0238FC535CA11A /* BaselineBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaselineBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA9C6815D93457E782CC55E4 /* BaselineBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaselineBarApp.swift; sourceTree = "<group>"; };
+		B78EDA80C1FA3FCDF4491FCD /* BaselineBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BaselineBar.entitlements; sourceTree = "<group>"; };
+		B999592D5674D07191DEB3B5 /* LoginItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemService.swift; sourceTree = "<group>"; };
+		C60C3C233FF7418B98CCF46F /* MenuBarPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPopoverView.swift; sourceTree = "<group>"; };
+		CAE993494184B75B1F0855A5 /* MenuBarLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarLayoutView.swift; sourceTree = "<group>"; };
+		ED0814AC9C5886512A08EAFF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F853D84892F84014B07949C8 /* MenuBarLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarLayoutController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1614DC23E82F0BD75304EDB2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				96632EADB049DDF1FBEC20E9 /* MainWindowView.swift */,
+				99C097291BFF5A82B98A92A3 /* MenuBarGroupView.swift */,
+				CAE993494184B75B1F0855A5 /* MenuBarLayoutView.swift */,
+				C60C3C233FF7418B98CCF46F /* MenuBarPopoverView.swift */,
+				ED0814AC9C5886512A08EAFF /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5BC975A9AB827CFFC3758430 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				616966A58CBEF91DCBF2DDC1 /* AppModel.swift */,
+				AA9C6815D93457E782CC55E4 /* BaselineBarApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		74141FE901FFB3D7E8A21B55 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				73D08C348D7585BD688A3728 /* BaselineBarTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		8C02F3315A0140CE601818AC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1A622479298A0A146A4583B6 /* AccessibilityPermissionService.swift */,
+				B999592D5674D07191DEB3B5 /* LoginItemService.swift */,
+				F853D84892F84014B07949C8 /* MenuBarLayoutController.swift */,
+				526276664B40B389ACA09446 /* MenuBarScanner.swift */,
+				45A8E39F897994D66517260D /* WindowController.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A51C14E9687CC7D48ABDF930 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				751029FFFF267A9625C06746 /* AutomationRule.swift */,
+				6F25ADBD79B2193E3826E1D3 /* LayoutPreset.swift */,
+				0F823F93FFAE2938DA5D8184 /* MenuBarItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C72D05444455B3E2DFFE0A96 /* BaselineBar */ = {
+			isa = PBXGroup;
+			children = (
+				B78EDA80C1FA3FCDF4491FCD /* BaselineBar.entitlements */,
+				5BC975A9AB827CFFC3758430 /* App */,
+				A51C14E9687CC7D48ABDF930 /* Models */,
+				8C02F3315A0140CE601818AC /* Services */,
+				1614DC23E82F0BD75304EDB2 /* Views */,
+			);
+			path = BaselineBar;
+			sourceTree = "<group>";
+		};
+		E72A162940A05583DCBB53F9 = {
+			isa = PBXGroup;
+			children = (
+				C72D05444455B3E2DFFE0A96 /* BaselineBar */,
+				74141FE901FFB3D7E8A21B55 /* Tests */,
+				E8E79E9EAF760D47E5AAE0FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8E79E9EAF760D47E5AAE0FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AD2E923BDE67918F2DAF794 /* BaselineBar.app */,
+				A53A4A3DCE0238FC535CA11A /* BaselineBarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CC4B901E642D87DEFBCC58F /* BaselineBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8DD0AEF151676F4DA5230A9 /* Build configuration list for PBXNativeTarget "BaselineBar" */;
+			buildPhases = (
+				2735101488B0F594AB0CBB12 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BaselineBar;
+			packageProductDependencies = (
+			);
+			productName = BaselineBar;
+			productReference = 3AD2E923BDE67918F2DAF794 /* BaselineBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5531262FCE95241A5F63C3F6 /* BaselineBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 208DD03553C272187250294C /* Build configuration list for PBXNativeTarget "BaselineBarTests" */;
+			buildPhases = (
+				4E1D915058E65771FB87727F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48AE2D5F8243F062473FC25A /* PBXTargetDependency */,
+			);
+			name = BaselineBarTests;
+			packageProductDependencies = (
+			);
+			productName = BaselineBarTests;
+			productReference = A53A4A3DCE0238FC535CA11A /* BaselineBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E85C4574158B451F5EF90091 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3CC4B901E642D87DEFBCC58F = {
+						ProvisioningStyle = Automatic;
+					};
+					5531262FCE95241A5F63C3F6 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 41B31670062ED1B0F9C80B86 /* Build configuration list for PBXProject "BaselineBar" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E72A162940A05583DCBB53F9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E8E79E9EAF760D47E5AAE0FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CC4B901E642D87DEFBCC58F /* BaselineBar */,
+				5531262FCE95241A5F63C3F6 /* BaselineBarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2735101488B0F594AB0CBB12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1C5F44C5071930467E44452 /* AccessibilityPermissionService.swift in Sources */,
+				3172FEE727FD574010CA79C3 /* AppModel.swift in Sources */,
+				7B4F787691194A1DF21F33D3 /* AutomationRule.swift in Sources */,
+				1661E53CE60748139580EB2D /* BaselineBarApp.swift in Sources */,
+				F7ECF13202564673F6A20B0A /* LayoutPreset.swift in Sources */,
+				0E7FA26A2C8AA465B95BCB5E /* LoginItemService.swift in Sources */,
+				CD03E9BD0007192500547016 /* MainWindowView.swift in Sources */,
+				B92A608C55F1B7D303C20441 /* MenuBarGroupView.swift in Sources */,
+				7B2D182B08DCB1D50B2B80FE /* MenuBarItem.swift in Sources */,
+				69E788636030C2338EA956BB /* MenuBarLayoutController.swift in Sources */,
+				DCE2993AB632C087B02DBC40 /* MenuBarLayoutView.swift in Sources */,
+				E9B08CC3857C7D7A56FF41D3 /* MenuBarPopoverView.swift in Sources */,
+				BCF152553313678E6986E50E /* MenuBarScanner.swift in Sources */,
+				037E3319521A773848140876 /* SettingsView.swift in Sources */,
+				9DA44ACACE273B2D19F39D68 /* WindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E1D915058E65771FB87727F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAAEFEC13E88243C57277920 /* BaselineBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48AE2D5F8243F062473FC25A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CC4B901E642D87DEFBCC58F /* BaselineBar */;
+			targetProxy = 717B8E96C31E4185202F5A67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5FDC62607EAF61FCBB61D232 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaselineBar.app/Contents/MacOS/BaselineBar";
+			};
+			name = Debug;
+		};
+		62FEAC8BA8A49A100908564D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projectbaseline.BaselineBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		78AAAD2C98798650644BE42D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BaselineBar/BaselineBar.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = BaselineBar;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		889CF013D5247D820AE338CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projectbaseline.BaselineBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		AFB47AF698E25EDC541BA23C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaselineBar.app/Contents/MacOS/BaselineBar";
+			};
+			name = Release;
+		};
+		D9A8634800F7757AB63DF079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BaselineBar/BaselineBar.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = BaselineBar;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		208DD03553C272187250294C /* Build configuration list for PBXNativeTarget "BaselineBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FDC62607EAF61FCBB61D232 /* Debug */,
+				AFB47AF698E25EDC541BA23C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		41B31670062ED1B0F9C80B86 /* Build configuration list for PBXProject "BaselineBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				889CF013D5247D820AE338CC /* Debug */,
+				62FEAC8BA8A49A100908564D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D8DD0AEF151676F4DA5230A9 /* Build configuration list for PBXNativeTarget "BaselineBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9A8634800F7757AB63DF079 /* Debug */,
+				78AAAD2C98798650644BE42D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E85C4574158B451F5EF90091 /* Project object */;
+}
