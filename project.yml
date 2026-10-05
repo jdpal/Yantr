@@ -24,10 +24,12 @@ targets:
     type: framework
     platform: macOS
     sources:
-      - path: BaselineBar/App/AppModel.swift
-      - path: BaselineBar/Models
-      - path: BaselineBar/Services
-      - path: BaselineBar/Utilities
+      - path: BaselineBar
+        excludes:
+          - App/BaselineBarApp.swift
+          - Assets.xcassets
+          - BaselineBar.entitlements
+          - Views
     settings:
       base:
         PRODUCT_NAME: YantrCore
