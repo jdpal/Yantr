@@ -20,6 +20,7 @@
 		4C2E6943246DCF292AFC8DCA /* MenuBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3445F5D458F847B20608BB59 /* MenuBarItem.swift */; };
 		5143955E8CBBD4898EFCF777 /* LayoutPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9239785946075D3F17B25B /* LayoutPreset.swift */; };
 		5E08A845FCAB9C408F8C7CAD /* MenuBarLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E0CE2BF48D5847BF1631EF /* MenuBarLayoutController.swift */; };
+		62CA3FD2454C40A46B94B2E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2A07865B60D86CF16EAAD1 /* Assets.xcassets */; };
 		69D6A5AAF72E30F318B42686 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A787DCCB161F16CDFD10E5 /* AppModel.swift */; };
 		69D96A28E86328990B220250 /* AutomationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD8DB54A2B08C21AFED79FF /* AutomationRule.swift */; };
 		6E9D4115F4377781D5B8B534 /* YantrCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EA24A46195E528AFC386DF /* YantrCore.framework */; };
@@ -96,6 +97,7 @@
 		9E52E0F32B804A0AF42F98B0 /* BaselineBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaselineBarApp.swift; sourceTree = "<group>"; };
 		9EB7226BE07BE25662C1D5AF /* Yantr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yantr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31111AFCDB8E1893DCE224C /* MenuBarPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPopoverView.swift; sourceTree = "<group>"; };
+		AE2A07865B60D86CF16EAAD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7283A0E0C67FEB59B869C73 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B7E0CE2BF48D5847BF1631EF /* MenuBarLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarLayoutController.swift; sourceTree = "<group>"; };
 		D91D46DC365FACFD04BDABE9 /* BaselineBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BaselineBar.entitlements; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		B16D55EE7144AA89F70DE1F3 /* BaselineBar */ = {
 			isa = PBXGroup;
 			children = (
+				AE2A07865B60D86CF16EAAD1 /* Assets.xcassets */,
 				D91D46DC365FACFD04BDABE9 /* BaselineBar.entitlements */,
 				4B65A76105031B73AB6F09FF /* App */,
 				EDF53EE00E67B00F730CD1AA /* Models */,
@@ -265,6 +268,7 @@
 			buildConfigurationList = 7BCAF757296E7D6BF221B610 /* Build configuration list for PBXNativeTarget "Yantr" */;
 			buildPhases = (
 				DBF35F7EDD0EFF603B679C0C /* Sources */,
+				8E0A997742C22CBE6DF31B81 /* Resources */,
 				FE51CA4513749B96C575812E /* Frameworks */,
 				138DC063F917080BAABEC17E /* Embed Frameworks */,
 			);
@@ -320,6 +324,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E0A997742C22CBE6DF31B81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CA3FD2454C40A46B94B2E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B91FA667B2D3B3FABBB1D0B /* Sources */ = {
@@ -412,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "arm64 x86_64";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -443,6 +459,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -459,8 +476,10 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.1.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.projectbaseline.Yantr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -559,6 +578,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "arm64 x86_64";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -590,6 +610,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -612,9 +633,10 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.1.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.projectbaseline.Yantr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
