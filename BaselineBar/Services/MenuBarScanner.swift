@@ -26,7 +26,7 @@ struct MenuBarScanner {
             var menuBarValue: CFTypeRef?
             let result = AXUIElementCopyAttributeValue(
                 appElement,
-                kAXMenuBarAttribute as CFString,
+                kAXExtrasMenuBarAttribute as CFString,
                 &menuBarValue
             )
 
@@ -36,10 +36,10 @@ struct MenuBarScanner {
                 continue
             }
 
-            let menuBar = unsafeBitCast(menuBarValue, to: AXUIElement.self)
+            let extrasMenuBar = unsafeBitCast(menuBarValue, to: AXUIElement.self)
             var childrenValue: CFTypeRef?
             let childrenResult = AXUIElementCopyAttributeValue(
-                menuBar,
+                extrasMenuBar,
                 kAXChildrenAttribute as CFString,
                 &childrenValue
             )
@@ -76,7 +76,7 @@ struct MenuBarScanner {
         .compactMap { $0.value.first }
         .sorted { $0.title.localizedCaseInsensitiveCompare($1.title) == .orderedAscending }
 
-        return unique.isEmpty ? Self.previewItems : unique
+        return unique
     }
 
     private func stringAttribute(_ attribute: String, from element: AXUIElement) -> String? {
