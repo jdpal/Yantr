@@ -27,7 +27,7 @@ struct MenuBarGroupView: View {
                     .frame(maxWidth: .infinity, minHeight: 80)
             } else {
                 ForEach(items) { item in
-                    MenuBarItemRow(item: item)
+                    MenuBarItemRow(item: item, visibility: visibility)
                 }
             }
         }
@@ -45,6 +45,8 @@ struct MenuBarGroupView: View {
 private struct MenuBarItemRow: View {
     @EnvironmentObject private var model: AppModel
     let item: MenuBarItem
+    let visibility: MenuBarVisibility
+    @State private var isDropTargeted = false
 
     var body: some View {
         HStack(spacing: 10) {
@@ -72,7 +74,23 @@ private struct MenuBarItemRow: View {
             .menuStyle(.borderlessButton)
         }
         .padding(10)
-        .background(.background, in: RoundedRectangle(cornerRadius: 10))
+        .background {
+            RoundedRectangle(cornerRadius: 10)
+                .fill(isDropTargeted ? Color.accentColor.opacity(0.16) : Color(nsColor: .controlBackgroundColor))
+        }
         .draggable(item.id.uuidString)
+        .dropDestination(
+            for: String.self,
+            action: { droppedIDs, _ in
+                guard let raw = droppedIDs.first,
+                      let draggedID = UUID(uuidString: raw) else {
+                    return false
+                }
+                guard draggedID != item.id else { return true }
+                model.moveItem(draggedID, to: visibility, before: item.id)
+                return true
+            },
+            isTargeted: { isDropTargeted = $0 }
+        )
     }
 }

@@ -18,8 +18,10 @@ final class AppModel: ObservableObject {
     }
 
     func refreshMenuBarItems() async {
+        permissionState = permissions.currentState
         do {
             menuBarItems = try await scanner.scan()
+            lastErrorMessage = nil
         } catch {
             lastErrorMessage = error.localizedDescription
         }
@@ -31,6 +33,7 @@ final class AppModel: ObservableObject {
     }
 
     func moveItem(_ id: UUID, to visibility: MenuBarVisibility, before targetID: UUID? = nil) {
+        guard id != targetID else { return }
         guard let sourceIndex = menuBarItems.firstIndex(where: { $0.id == id }) else { return }
         var item = menuBarItems.remove(at: sourceIndex)
         item.visibility = visibility

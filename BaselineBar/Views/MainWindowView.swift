@@ -1,3 +1,4 @@
+import AppKit
 import SwiftUI
 
 struct MainWindowView: View {
@@ -32,6 +33,9 @@ struct MainWindowView: View {
                         .padding(16)
                 }
             }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: NSApplication.didBecomeActiveNotification)) { _ in
+            Task { await model.refreshMenuBarItems() }
         }
         .alert("Yantr", isPresented: Binding(
             get: { model.lastErrorMessage != nil },
