@@ -1,5 +1,9 @@
 import XCTest
+#if canImport(YantrCore)
 @testable import YantrCore
+#elseif canImport(BaselineBarCore)
+@testable import BaselineBarCore
+#endif
 
 final class BaselineBarTests: XCTestCase {
     func testCGRectCodableRoundTrip() throws {
